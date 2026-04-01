@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LeaveFlow — HRIS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ 
+  <!-- TOP BAR -->
+  <div class="topbar">
+    <div class="logo">
+      <div class="logo-icon">🌿</div>
+      LeaveFlow
+    </div>
+ 
+    <div class="role-switcher">
+      <button class="role-btn active" onclick="switchRole('employee')">Employee</button>
+      <button class="role-btn" onclick="switchRole('manager')">Manager</button>
+      <button class="role-btn" onclick="switchRole('hr')">HR</button>
+    </div>
+ 
+    <div class="user-chip">
+      <div class="avatar" id="avatar-initials">AK</div>
+      <span id="user-name">Arjun Kumar</span>
+    </div>
+  </div>
+ 
+  <!-- MAIN CONTENT -->
+  <div class="layout" id="app"></div>
+ 
+  <!-- TOAST NOTIFICATION -->
+  <div class="toast" id="toast">
+    <span class="toast-msg"></span>
+  </div>
+ 
+  <script src="app.js"></script>
+</body>
+</html>
+ 
