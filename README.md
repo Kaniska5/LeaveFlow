@@ -18,18 +18,22 @@ The focus is on implementing one key feature from the overall system:
 View leave balances (Casual, Sick, Earned)
 Apply for leave with date range, leave type, and reason
 Track leave history and request status (Approved, Pending, Rejected)
+
 **Manager**
 View team leave requests
 Approve or reject requests
 Add comments to decisions
 View team leave history
+
 **HR**
 View organization-wide leave statistics (total, pending, approved, rejected)
 Filter leave records by status, department, and leave type
+
 **Tech Stack**
 HTML for structure
 CSS for styling and responsive design
 JavaScript (Vanilla) for logic and dynamic rendering
+
 **How It Works**
 Role-Based Rendering
 
@@ -52,8 +56,11 @@ The UI updates instantly after actions such as submitting a leave request or app
 This implementation reflects the UX decisions from the HRIS dashboard design:
 
 Employee: Action-focused interface with quick leave application and balance visibility
+
 Manager: Decision-focused interface with priority on pending requests
+
 HR: Insight-focused interface with aggregated data and filtering capabilities
+
 Navigation Flow
 
 The system follows a simple and intuitive navigation structure. Users start from a home screen and are redirected to relevant sections based on their role and selected actions. Each dashboard provides clear entry points to key features. Signing out brings the user back to the home screen, ensuring a complete and consistent user flow.
@@ -65,7 +72,7 @@ The system follows a simple and intuitive navigation structure. Users start from
 index.html - Application structure
 styles.css - Styling and layout
 app.js - Application logic
-README.md - Documentation
+
 How to Run
 Download or clone the repository
 Open index.html in a browser
@@ -73,6 +80,7 @@ Open index.html in a browser
 No additional setup is required.
 
 **Future Improvements**
+
 Add backend support for persistent data storage
 Implement authentication and role-based login
 Integrate with real employee database
@@ -87,6 +95,7 @@ Converting UX design into a working application
 Building role-based user interfaces
 Managing state using vanilla JavaScript
 Prioritizing features based on user roles
+
 **Conclusion**
 
 LeaveFlow is a simplified but effective implementation of a Leave Management System that highlights how thoughtful design can lead to meaningful functionality. It focuses on clarity, usability, and role-specific workflows within an HR system.
